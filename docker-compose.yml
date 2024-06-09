@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  expressjs:
+    build: .
+    ports:
+      - "8006:8006"
+# services:
+#   service1:
+#     build: .
+#     environment:
+#       - PORT=8006
+#     ports:
+#       - "8006:8006"
+#     networks:
+#       - ms-express-network
+
+#   service2:
+#     build: .
+#     environment:
+#       - PORT=8016
+#     ports:
+#       - "8006:8016"
+#     networks:
+#       - ms-express-network
+
+#   service3:
+#     build: .
+#     environment:
+#       - PORT=8026
+#     ports:
+#       - "8006:8026"
+#     networks:
+#       - ms-express-network
+
+#   nginx:
+#     image: nginx:latest
+#     ports:
+#       - "80:80"
+#     volumes:
+#       - ../load-balancer/nginx.conf:/etc/nginx/nginx.conf
+#     depends_on:
+#       - service1
+#       - service2
+#       - service3
+#     networks:
+#       - ms-express-network
+
+#   networks:
+#     ms-express-network:
+#       driver: bridge
