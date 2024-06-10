@@ -23,7 +23,7 @@ export const orderItemController = {
     const allOrderHistory = await Orderitem.find().populate("order_id");
 
     return res.status(200).json({
-      message: "Successfully get all order history!",
+      message: "Successfully get all order items history!",
       data: allOrderHistory,
     });
   },
