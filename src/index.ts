@@ -20,6 +20,7 @@ app.use("/orders", orderRouter);
 app.use("/orderitems", orderItemRouter);
 
 // console.log("Hello");
+console.log("Love Hoshina Soshiro");
 
 app.get("/", (req, res) => res.json({ message: `Hello from port ${port}` }));
 
